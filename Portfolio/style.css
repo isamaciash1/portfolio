@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Joti+One&family=Sawarabi+Mincho&display=swap');
+*{
+    box-sizing: border-box;
+    font-family: "Istok Web", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Sawarabi system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  
+h1{
+    font-size: 32px;
+}
+  nav {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 10px 20px;
+    color: black;
+  }
+  
+
+  .name {
+    font-size: 40px;
+    font-weight: bold;
+  }
+  
+  .font-one{
+    font-size: 50px;
+
+  }
+
+  .font-two{
+    font-size: 20px;
+  }
+  .nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .nav-links li {
+    margin-left: 40px; }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #ffd32c; 
+    font-size: 25px;
+    transition: color 0.3s;
+  }
+  
+  .nav-links a:hover {
+    color: black; 
+  }
+
+  .nav-links a.active {
+    color:black; 
+  }
+
+
+  .intro {
+    padding-top: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .profile-pic {
+    width: 500px; 
+    height: auto;
+    margin-right: 30px;
+    border-radius: 50%; 
+  }
+
+  .resume-title {
+    text-align: center;
+    font-size: 36px;
+  }
+
+
+.resume-sections {
+    margin-top: 10%;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    text-align: center;
+  }
+  
+  article {
+    flex: 1; 
+    padding: 10px;
+  }
+  
+  article h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  article ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  article li {
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+
+
+
+
+h1, header p, main , footer p {
+    width: 75%;
+    margin: auto;
+}
+
+.cycle-slideshow{
+    .cycle-slideshow {
+        position: relative;
+        width: 100%;
+        height: 500px; /* Adjust the height of the slideshow */
+        overflow: hidden;
+        border-radius: 10px; /* Optional: Add rounded corners */
+        background-color: #000; /* Optional: Add background color for slideshow */
+      }
+}
+.cycle-slideshow img {
+    width: 100%;
+    height: auto;
+}
+
+
+.slide-container{
+    position: relative;
+    align-items: center;
+    padding-left: 5%;
+}
+/* captions*/
+
+
+.slide {
+    position: absolute;
+}
+
+.slide-text{
+    position: absolute;
+    bottom: 0;
+    background: rgb(255, 255,255,0.75);
+    padding: 0 15px;
+    width: 100%;
+}
+
+.slide-text h3{
+    margin-top: 10px;
+}
+
+
+/* buttons*/
+ 
+.cycle-prev, .cycle-next {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #FFF;
+    display: block;
+    padding: 5px;
+    cursor: pointer;
+    z-index: 1000;
+    opacity: 0;
+    transition: opacity 0.5s;
+
+}
+
+.cycle-prev{
+    top: 40%;
+    left: 0;
+}
+
+.cycle-next{
+    top: 40%;
+    right: 48px;
+}
+
+.cycle-slideshow:hover .cycle-prev,.cycle-slideshow:hover .cycle-next {
+
+    opacity: 1;
+
+}
+
+
+.cycle-pager{
+    position: absolute;
+    top: 10px;
+    width: 90%;
+    text-align: center;
+    color: #fff;
+    z-index: 1090;
+}
+
+.cycle-pager span {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #fff;
+    margin: 5px;
+    cursor: pointer;
+    text-indent: -5000px;
+}
+
+.cycle-pager .cycle-pager-active {
+    background:#ffd32c ;
+}
+
+footer {
+    position: absolute;
+    width: 100%;
+    margin-top: 20px;
+text-align: center;
+background-color: #ffd32c;
+color: black;
+}
+.slide-text p a {
+    display: inline-block;
+    text-decoration: none;
+    background: black;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: bold;
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+}
+
+
+.slide-text p a:hover {
+    background-color: #ffd32c;
+    color: black;
+
+}
+
+
+
+
+
+
+
+
+/* media queries */
+
+
+/* desktop */
+@media (max-with: 1500px) {
+    h1, header p, main , footer p {
+        width: 100%;
+    }
+}
+
+
+/* phones */
+
+
+@media (max-with: 970px) {
+   main section{
+ flex: auto;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
